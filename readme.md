@@ -1,24 +1,14 @@
 # Project Setup
 
-<<<<<<< HEAD
-[![Production Workflow](https://github.com/SatyaAbhilash98/flask_logging/actions/workflows/prod.yml)](https://github.com/SatyaAbhilash98/flask_logging/actions/workflows/prod.yml)
+[![Production Workflow](https://github.com/SatyaAbhilash98/flask_log/actions/workflows/prod.yml/badge.svg)](https://github.com/SatyaAbhilash98/flask_log/actions/workflows/prod.yml)
 
 * [Production Deployment](https://log-prod-sd56.herokuapp.com/)
-=======
-[![Development Workflow](https://github.com/SatyaAbhilash98/flask_logging/actions/workflows/dev.yml/badge.svg)](https://github.com/SatyaAbhilash98/flask_logging/actions/workflows/dev.yml)
 
-* [Development App](https://log-dev-sd56.herokuapp.com/)
->>>>>>> 0cccf781221ebcdba2957f4ca69dd2cb0928fe54
 
-[![Production Workflow](https://github.com/SatyaAbhilash98/flask_logging/actions/workflows/prod.yml/badge.svg)](https://github.com/SatyaAbhilash98/flask_logging/actions/workflows/prod.yml)
-
-<<<<<<< HEAD
-[![Development Workflow](https://github.com/SatyaAbhilash98/flask_logging/actions/workflows/dev.yml)](https://github.com/SatyaAbhilash98/flask_logging/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/SatyaAbhilash98/flask_log/actions/workflows/dev.yml/badge.svg)](https://github.com/SatyaAbhilash98/flask_log/actions/workflows/dev.yml)
 
 * [Developmental Deployment](https://log-dev-sd56.herokuapp.com/)
-=======
-* [Production App](https://log-prod-sd56.herokuapp.com/)
->>>>>>> 0cccf781221ebcdba2957f4ca69dd2cb0928fe54
+
 
 ## Setting up CI/CD
 
