@@ -9,8 +9,8 @@ def test_request_file_created():
     assert os.path.exists(filepath) == True
 
 
-def test_debug_file_created():
-    """This tests if debug log file is created"""
-    filepath = os.path.abspath('app/logs/debug.log')
-    print(filepath)
-    assert os.path.exists(filepath) == True
+#def test_debug_file_created():
+ #   """This tests if debug log file is created"""
+  #  filepath = os.path.abspath('app/logs/debug.log')
+   # print(filepath)
+    #assert os.path.exists(filepath) == True
