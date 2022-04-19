@@ -1,0 +1,50 @@
+[2022-04-19 20:11:05,690] 172.23.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-19 20:11:07,354] 172.23.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-19 20:11:08,211] 172.23.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-19 20:33:49,801] 172.23.0.1 requested http://localhost/register
+INFO in __init__: this is the plain message
+[2022-04-19 20:33:51,661] 172.23.0.1 requested http://localhost/login
+INFO in __init__: this is the plain message
+[2022-04-19 20:33:56,790] 172.23.0.1 requested http://localhost/login
+INFO in __init__: this is the plain message
+[2022-04-19 20:33:56,862] 172.23.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-19 20:34:02,612] 172.23.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-19 20:34:03,250] 172.23.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-19 20:34:03,660] 172.23.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
+[2022-04-19 20:34:06,642] 172.23.0.1 requested http://localhost/account
+INFO in __init__: this is the plain message
+[2022-04-19 20:34:09,060] 172.23.0.1 requested http://localhost/profile
+INFO in __init__: this is the plain message
+[2022-04-19 20:34:11,504] 172.23.0.1 requested http://localhost/logout
+INFO in __init__: this is the plain message
+[2022-04-19 20:34:11,528] 172.23.0.1 requested http://localhost/login
+INFO in __init__: this is the plain message
+[2022-04-19 20:34:13,041] 172.23.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-19 20:40:18,546] 172.23.0.1 requested http://localhost/welcome
+INFO in __init__: method: GET,  path: /welcome,  status: 200,  duration: 0.18,  time: 2022-04-19T20:40:18Z,  ip: 172.23.0.1,  host: localhost,  params: {}, 
+[2022-04-19 20:40:19,951] 172.23.0.1 requested http://localhost/
+INFO in __init__: method: GET,  path: /,  status: 200,  duration: 0.03,  time: 2022-04-19T20:40:19Z,  ip: 172.23.0.1,  host: localhost,  params: {}, 
+[2022-04-19 20:40:21,038] 172.23.0.1 requested http://localhost/register
+INFO in __init__: method: GET,  path: /register,  status: 200,  duration: 0.03,  time: 2022-04-19T20:40:21Z,  ip: 172.23.0.1,  host: localhost,  params: {}, 
+[2022-04-19 21:38:08,527] 172.23.0.1 requested http://localhost/register
+INFO in __init__: this is the plain message
+[2022-04-19 21:38:09,896] 172.23.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-19 21:38:10,847] 172.23.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-19 21:38:10,996] 172.23.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-19 21:38:11,231] 172.23.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-19 21:38:11,495] 172.23.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-19 21:38:11,686] 172.23.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
