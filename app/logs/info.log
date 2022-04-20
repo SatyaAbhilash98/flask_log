@@ -48,3 +48,23 @@ INFO in __init__: this is the plain message
 INFO in __init__: this is the plain message
 [2022-04-19 21:38:11,686] 172.23.0.1 requested http://localhost/about
 INFO in __init__: this is the plain message
+[2022-04-19 23:42:53,538] 172.24.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-19 23:43:01,178] 172.24.0.1 requested http://localhost/about
+INFO in __init__: this is the plain message
+[2022-04-19 23:43:01,577] 172.24.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-19 23:43:02,225] 172.24.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-19 23:56:08,644] 172.24.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-19 23:57:13,417] 172.24.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-19 23:57:15,040] 172.24.0.1 requested http://localhost/welcome
+INFO in __init__: this is the plain message
+[2022-04-20 00:09:36,026] 172.24.0.1 requested http://localhost/
+INFO in __init__: this is the plain message
+[2022-04-20 00:09:43,175] 172.24.0.1 requested http://localhost/login
+INFO in __init__: this is the plain message
+[2022-04-20 00:09:43,200] 172.24.0.1 requested http://localhost/dashboard
+INFO in __init__: this is the plain message
