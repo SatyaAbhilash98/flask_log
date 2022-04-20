@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash
+from flask import Blueprint, render_template, request, redirect, url_for, flash, has_request_context, app, Flask
 
 from app.auth.decorators import admin_required
 from flask_login import login_user, login_required, logout_user, current_user
@@ -11,8 +11,38 @@ from app.db.models import User
 auth = Blueprint('auth', __name__, template_folder='templates')
 from flask import current_app
 
+import os
+import logging
 
 
+def debug_log():
+    debug_file = os.path.abspath('app/logs/debug.log')
+    debug_handler = logging.FileHandler(debug_file)
+    # Create a log file formatter object to create the entry in the log
+    debug_formatter = DebugFormatter(
+        'Timestamp of Request: [%(asctime)s]\n' '%(url)s requested by %(remote_addr)s\n'
+        '%(levelname)s in %(module)s: %(message)s'
+    )
+    # set the formatter for the log entry
+    debug_handler.setFormatter(debug_formatter)
+    # Set the logging level of the file handler object so that it logs INFO and up
+    debug_handler.setLevel(logging.DEBUG)
+    # Add the handler for the log entry
+    app.logger.addHandler(debug_handler)
+
+class DebugFormatter(logging.Formatter):
+    def format(self, record):
+        if has_request_context():
+            record.url = request.url
+            record.remote_addr = request.remote_addr
+        else:
+            record.url = None
+            record.remote_addr = None
+
+        return super().format(record)
+
+app = Flask(__name__)
+debug_hand = debug_log()
 
 @auth.route('/login', methods=['POST', 'GET'])
 def login():
@@ -30,6 +60,7 @@ def login():
             db.session.commit()
             login_user(user)
             flash("Welcome", 'success')
+            app.logger.debug('login successful')
             return redirect(url_for('auth.dashboard'))
     return render_template('login.html', form=form)
 
@@ -72,6 +103,7 @@ def logout():
     db.session.add(user)
     db.session.commit()
     logout_user()
+    app.logger.debug('logout successful')
     return redirect(url_for('auth.login'))
 
 
@@ -95,6 +127,7 @@ def browse_users():
 @login_required
 def retrieve_user(user_id):
     user = User.query.get(user_id)
+    app.logger.debug('User Found!!')
     return render_template('profile_view.html', user=user)
 
 
@@ -109,6 +142,7 @@ def edit_user(user_id):
         db.session.add(user)
         db.session.commit()
         flash('User Edited Successfully', 'success')
+        app.logger.debug('login successful')
         return redirect(url_for('auth.browse_users'))
     return render_template('user_edit.html', form=form)
 
@@ -169,5 +203,3 @@ def edit_account():
         flash('You Successfully Updated your Password or Email', 'success')
         return redirect(url_for('auth.dashboard'))
     return render_template('manage_account.html', form=form)
-
-

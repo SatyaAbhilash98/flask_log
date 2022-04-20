@@ -1,6 +1,6 @@
 import click
-from flask.cli import with_appcontext
 from app.db import db
+from flask.cli import with_appcontext
 
 
 @click.command(name='create-db')
